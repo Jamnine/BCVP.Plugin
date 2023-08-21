@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace Blog.Core.Model
+namespace BCVP.Plugin.Common.CommonModel
 {
     public class PageModel<T>
     {

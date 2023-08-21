@@ -1,4 +1,4 @@
-﻿namespace Blog.Core.Extensions.Swagger
+﻿namespace BCVP.Plugin.Common.GlobalVar
 {
     public static class Permissions
     {

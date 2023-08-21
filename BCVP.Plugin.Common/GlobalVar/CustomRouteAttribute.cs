@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using System;
-using static Blog.Core.Extensions.Swagger.CustomApiVersion;
+using static BCVP.Plugin.Common.GlobalVar.CustomApiVersion;
 
-namespace Blog.Core.Extensions.Swagger
+namespace BCVP.Plugin.Common.SwaggerHelper
 {
     /// <summary>
     /// 自定义路由 /api/{version}/[controler]/[action]
@@ -29,7 +28,7 @@ namespace Blog.Core.Extensions.Swagger
         /// </summary>
         /// <param name="actionName"></param>
         /// <param name="version"></param>
-        public CustomRouteAttribute(ApiVersions version, string actionName = "") : base($"/api/{version.ToString()}/[controller]/[action]/{actionName}")
+        public CustomRouteAttribute(ApiVersions version, string actionName = "") : base($"/api/{version.ToString()}/[controller]/{actionName}")
         {
             GroupName = version.ToString();
         }

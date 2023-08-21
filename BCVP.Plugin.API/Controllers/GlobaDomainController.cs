@@ -1,8 +1,6 @@
-﻿using Blog.Core.Extensions.Swagger;
-using Blog.Core.Model;
+﻿using BCVP.Plugin.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using SqlSugar.Extensions;
 
 namespace Blog.Core.Api.Controllers
@@ -38,8 +36,8 @@ namespace Blog.Core.Api.Controllers
                 {
                     url = "/index.html";
                 }
-                    HttpContext.Session.SetString("swagger-code", "success");
-                    return new { result = true, token = "Bearer ", location = url };
+                HttpContext.Session.SetString("swagger-code", "success");
+                return new { result = true, token = "Bearer ", location = url };
 
             }
             catch (Exception ex)

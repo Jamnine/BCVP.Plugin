@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Blog.Core.Extensions.Swagger
+namespace BCVP.Plugin.Common
 {
     /// <summary>
     /// appsettings.json操作类

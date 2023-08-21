@@ -1,10 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using BCVP.Plugin.Common;
+using BCVP.Plugin.Common.GlobalVar;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Runtime.InteropServices;
-using static Blog.Core.Extensions.Swagger.CustomApiVersion;
+using static BCVP.Plugin.Common.GlobalVar.CustomApiVersion;
 
-namespace Blog.Core.Extensions.Swagger
+namespace BCVP.Plugin.Swagger
 {
     /// <summary>
     /// Swagger 启动服务

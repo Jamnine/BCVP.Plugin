@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Blog.Core.Extensions.Swagger\Blog.Core.Extensions.Swagger.csproj" />
+    <ProjectReference Include="..\BCVP.Plugin.Common\BCVP.Plugin.Common.csproj" />
+    <ProjectReference Include="..\BCVP.Plugin.Swagger\BCVP.Plugin.Swagger.csproj" />
   </ItemGroup>
 
 </Project>

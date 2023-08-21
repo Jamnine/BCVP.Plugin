@@ -1,6 +1,5 @@
-using Autofac.Core;
-using Blog.Core.Extensions.Swagger;
-using System.Configuration;
+using BCVP.Plugin.Common;
+using BCVP.Plugin.Swagger;
 using System.Reflection;
 
 
@@ -8,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton(new Blog.Core.Extensions.Swagger.AppSettings(builder.Configuration));
+builder.Services.AddSingleton(new AppSettings(builder.Configuration));
+//builder.Services.AddSingleton(new Blog.Core.Extensions.Swagger.AppSettings(builder.Configuration));
 
 builder.Services.AddControllers();
 //Ìí¼ÓSwagger
@@ -29,7 +29,7 @@ app.UseRouting();
 app.UseSession();
 app.UseSwaggerAuthorized();
 // SwaggerÊ×Ò³
-app.UseSwaggerMildd(() => Assembly.GetExecutingAssembly().GetManifestResourceStream("Blog.Core.Api.index.html"));
+app.UseSwaggerMildd(() => Assembly.GetExecutingAssembly().GetManifestResourceStream("BCVP.Plugin.API.index.html"));
 app.UseAuthorization();
 
 app.MapRazorPages();

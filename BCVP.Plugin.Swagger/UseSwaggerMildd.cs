@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using BCVP.Plugin.Common;
+using Microsoft.AspNetCore.Builder;
 using SqlSugar.Extensions;
 using Swashbuckle.AspNetCore.SwaggerUI;
-using static Blog.Core.Extensions.Swagger.CustomApiVersion;
+using static BCVP.Plugin.Common.GlobalVar.CustomApiVersion;
 
-namespace Blog.Core.Extensions.Swagger
+namespace BCVP.Plugin.Swagger
 {
     /// <summary>
     /// Cors 启动服务
@@ -37,8 +38,8 @@ namespace Blog.Core.Extensions.Swagger
                 c.DocExpansion(DocExpansion.None); //->修改界面打开时自动折叠
                                                    //设置为-1 可不显示models
                                                    //c.DefaultModelsExpandDepth(-1);//不显示model
-                                                   // 路径配置，设置为空，表示直接在根域名（localhost:8001）访问该文件,注意localhost:8001/swagger是访问不到的，去launchSettings.json把launchUrl去掉，如果你想换一个路径，直接写名字即可，比如直接写c.RoutePrefix = "doc";
 
+                // 路径配置，设置为空，表示直接在根域名（localhost:8001）访问该文件,注意localhost:8001/swagger是访问不到的，去launchSettings.json把launchUrl去掉，如果你想换一个路径，直接写名字即可，比如直接写c.RoutePrefix = "doc";
                 if (AppSettings.app("AppSettings", "HideSwagger", "Enabled").ObjToBool())
                 {
                     c.RoutePrefix = AppSettings.app("AppSettings", "HideSwagger", "RoutePrefix").ToString();

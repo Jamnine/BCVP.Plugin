@@ -1,4 +1,4 @@
-﻿namespace Blog.Core.Model
+﻿namespace BCVP.Plugin.Common.CommonModel
 {
     /// <summary>
     /// 通用返回信息类

@@ -1,6 +1,5 @@
-﻿using Blog.Core.Model;
+﻿using BCVP.Plugin.Common.CommonModel;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace Blog.Core.Api.Controllers
 {

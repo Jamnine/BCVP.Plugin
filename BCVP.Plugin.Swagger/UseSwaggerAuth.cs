@@ -1,32 +1,10 @@
-﻿#region 描述信息
-/**
-* 文件名：UseSwaggerAuth
-* 类  名：UseSwaggerAuth
-* 命名空间：Blog.Core.Extensions.Swagger
-* 当前系统用户名：Nine
-* 当前用户所在的域：NINE-DESIGNMINI
-* 当前机器名称：NINE-DESIGNMINI
-* 注册的组织名：
-* 时间：2022/2/15 14:09:25
-* CLR：4.0.30319.42000 
-* GUID: b09dc497-f307-4798-90ca-c93631c95cd8 
-* 当前系统时间：2022
-* Copyright (c) 2022 何拾玖 Corporation. All rights reserved.
-*┌───────────────────────────────────────────────────────────────┐
-*│　此技术信息为本公司机密信息，未经本公司书面同意禁止向第三方披露．   
-*│　版权所有 何拾玖                                              
-*└───────────────────────────────────────────────────────────────┘
-* * Ver 变更日期 负责人 当前系统用户名 CLR版本 变更内容
-* V0.01 2022/2/15 14:09:25 何拾玖 Nine 4.0.30319.42000 初版
-**/
-#endregion
-
+﻿using BCVP.Plugin.Common;
 using Microsoft.AspNetCore.Http;
 using SqlSugar.Extensions;
 using System.Net;
 using System.Text;
 
-namespace Blog.Core.Extensions.Swagger
+namespace BCVP.Plugin.Swagger
 {
     /// <summary>
     /// 实现类：UseSwaggerAuth
